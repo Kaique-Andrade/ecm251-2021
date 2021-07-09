@@ -4,7 +4,7 @@ Repositório criado para gerenciar os projetos e aulas de Linguagens I.
 # Desenvolvedor:
 ## Kaique de Andrade Almeida
 
-# Pricípais Linguagens:
+# Princípais Linguagens:
 - Java
 - C
 - Python
