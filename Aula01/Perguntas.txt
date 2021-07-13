@@ -9,8 +9,13 @@
 
 3. Como compilamos um programa por linha de comando utilizando o javac
 
---- 
+--- -> Primeiro entre na pasta onde se encontra o programa que quer compilar
+    -> Depois no terminal digite %javac nomeDoPrograma.java
+    -> Com isso vai gerar um arquivo nomeDoPrograma.class compilado
+
 4. E como executamos este programa?
+
+--- -> Digite %java nomeDoPrograma 
 
 5. O que são variáveis do ambiente? Para que elas servem?
 
