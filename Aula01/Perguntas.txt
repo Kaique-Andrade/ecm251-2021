@@ -1,9 +1,15 @@
-1. Em qual pasta o jdk do java está instalado?instalado?(não incluir a pasta bin nesta etapa)
+1. Em qual pasta o jdk do java está instalado?(não incluir a pasta bin nesta etapa)
+
+--- C:\Arquivos de Programa\Amazon Corretto\jdk11.0.10_9
 
 2. E qual o caminho completo até os executáveis javac e java que foram instalados do computador?
 
+--- C:\Arquivos de Programa\Amazon Corretto\jdk11.0.10_9\bin\java
+    C:\Arquivos de Programa\Amazon Corretto\jdk11.0.10_9\bin\javac
+
 3. Como compilamos um programa por linha de comando utilizando o javac
 
+--- 
 4. E como executamos este programa?
 
 5. O que são variáveis do ambiente? Para que elas servem?
