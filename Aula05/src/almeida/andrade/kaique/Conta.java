@@ -2,31 +2,31 @@ package almeida.andrade.kaique;
 
 public class Conta {
     //Atributos da classe
-    Cliente cliente;
-    double saldo;
-    int numero;
+    private Cliente cliente;
+    private double saldo;
+    private int numero;
 
     //Métodos da classe
-    void depositar(double valor){
+    public void depositar(double valor){
         //this.saldo = this.saldo + valor;
         this.saldo += valor;
     }
-    boolean sacar(double valor){
+    public boolean sacar(double valor){
         if (valor <= this.saldo){
             this.saldo -= valor;
             return true;
         }
         return false;
     }
-    boolean transferirDinheiro(Conta Destino, double valor){
+    public boolean transferirDinheiro(Conta Destino, double valor){
         if (this.sacar(valor)){
             Destino.depositar(valor);
             return true;
         }
         return false;
     }
-    void visualizarSaldo(){
-        System.out.println("Saldo atual: R$" + this.saldo);
+    public double visualizarSaldo(){
+        return this.saldo;
     }
 
     @Override
