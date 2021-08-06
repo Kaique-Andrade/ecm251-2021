@@ -7,6 +7,21 @@ public class Conta {
     private int numero;
 
     //Métodos da classe
+
+    //Construtor da classe
+    public Conta(String nomeCliente, double saldoInicial){
+        this.saldo = saldoInicial;
+        this.cliente = new Cliente(nomeCliente);
+        this.numero = 1234;
+    }
+    public Conta(String nomeCliente, String cpf){
+        this.cliente = new Cliente(nomeCliente);
+    }
+
+    public double getSaldo(){
+        return this.saldo;
+    }
+
     public void depositar(double valor){
         //this.saldo = this.saldo + valor;
         this.saldo += valor;

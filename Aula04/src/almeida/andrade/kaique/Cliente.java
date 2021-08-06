@@ -1,9 +1,12 @@
 package almeida.andrade.kaique;
 
 public class Cliente {
-    String nome;
-    String sobrenome;
-    String cpf;
+    public Cliente(String nome){
+        this.nome = nome;
+    }
+    private String nome;
+    private String sobrenome;
+    private String cpf;
 
     @Override
     public String toString() {
