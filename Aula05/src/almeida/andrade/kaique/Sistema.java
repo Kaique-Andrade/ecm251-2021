@@ -38,6 +38,21 @@ public class Sistema {
                 this.conta.depositar(quantiaParaDepositar);
                 System.out.println("Operação realizada com sucesso!");
                 break;
+            case 5:
+                System.out.println("Nome da Conta: ");
+                String nome = scanner.next();
+                System.out.println("Valor da conta: ");
+                double valorDaConta = scanner.nextDouble();
+                System.out.println("Juros da conta: ");
+                double jurosDaConta = scanner.nextDouble();
+                System.out.println("Informe a data de vencimento(ano/mes/dia): ");
+                String dataVencimentoTitulo = scanner.next();
+                Titulo titulo = new Titulo(valorDaConta,nome,dataVencimentoTitulo,jurosDaConta);
+                if (this.conta.sacar(titulo.totalParaPagar())){
+                    System.out.println("Operação realizada com sucesso!");
+                } else {
+                    System.out.println("Saldo insuficiente para pagar");
+                }
             default:
                 System.out.println("Essa funcionalidade ainda não foi implementada");
         }
